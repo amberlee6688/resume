@@ -1,0 +1,89 @@
+.lightbox-target{
+	background-color: rgba(0,0,0,.7);
+	top: -100%;
+	width: 100%;
+	position: fixed;
+	overflow: hidden;
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+	-webkit-transition: opacity 0.5s ease-in-out;
+	-moz-webkit-transition: opacity 0.5s ease-in-out;
+	-ms--webkit-transition: opacity 0.5s ease-in-out;
+	-o-webkit-transition: opacity 0.5s ease-in-out;
+}
+
+.lightbox-target img{
+	position: absolute;
+	border: 3px solid #FFFFFF;
+	box-sizing: border-box;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	min-width: 0%;
+	min-height: 0%;
+	box-shadow: 0 0 8px rgba(0,0,0,.3);
+	-webkit-box-shadow: 0 0 8px rgba(0,0,0,.3);
+	-moz-box-shadow: 0 0 8px rgba(0,0,0,.3);
+	-ms-box-shadow: 0 0 8px rgba(0,0,0,.3);
+	-o-box-shadow: 0 0 8px rgba(0,0,0,.3);
+}
+
+.lightbox-target:target{
+	opacity: 1;
+	top: 0;
+	bottom: 0;
+}
+
+.lightbox-target:target img{
+	max-width: 100%;
+	max-height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	top: 50px;
+}
+
+.lightbox-target:target .lightbox-close{
+	top: 50px;
+}
+
+.lightbox-close{
+	display: block;
+	width: 50px;
+	height: 50px;
+	top: 10%;
+	background-color: #139dd7;
+	color: #FFFFFF;
+	top: 10%;
+	right: 5%;
+	position: absolute;
+	box-sizing: border-box;
+	transition: ease-in-out 0.5s;
+	-webkit-transition: ease-in-out 0.5s;
+	-moz-transition: ease-in-out 0.5s;
+	-ms-transition: ease-in-out 0.5s;
+	-o-transition: ease-in-out 0.5s;
+}
+
+.lightbox-close:before,.lightbox-close:after{
+	content: "";
+	background-color: #FFFFFF;
+	height: 30px;
+	width: 1px;
+	position: absolute;
+	top: 10px;
+	left: 26px;
+	transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+}
+
+.lightbox-close:after{
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+}

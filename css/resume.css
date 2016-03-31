@@ -1,0 +1,355 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+
+body{
+	font-family: 'Finger Paint',cursive,"微軟正黑體","Helvetica";
+}
+
+li{
+	list-style-type: none;
+}
+
+a,a:hover{
+	text-decoration: none;
+}
+
+nav.nav-bar{
+	background-color: rgba(0,70,228,0.46);
+	height: 50px;
+	line-height: 40px;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: 10;
+}
+
+.nav-bar .nav-bar-header{
+	padding: 0px 30px;
+	height: 50px;
+}
+
+.nav-bar .nav-bar-header .header{
+	float: left;
+	font-size: 18px;
+	line-height: 50px;
+	text-transform: uppercase;
+}
+
+.nav-bar .nav-bar-header a{
+	color: #FFFFFF;
+	font-weight: 300;
+}
+
+.nav-bar .nav-bar-header a:hover{
+	color: #5500DD;
+}
+
+.nav-bar .nav-bar-header .header a{
+	font-size: 20px;
+}
+
+.nav-bar .nav-bar-header .menu .bar{
+	display: none;
+}
+
+.nav-bar .nav-bar-header .menu .bar-down ul.title{
+	display: block;
+	float: left;
+}
+
+.nav-bar .nav-bar-header .menu .bar-down .title li.item{
+	float: left;
+	margin-right: 20px;
+}
+
+.nav-bar .nav-bar-header .menu .bar-down .title .item a{
+	font-size: 19px;
+	line-height: 50px;
+}
+
+.container{
+	width: 100%;
+	margin-top: 50px;
+}
+
+.container #flag{
+	background: url("../img/flag.png") repeat-x;
+	color: #DC5C29;
+	font-size: 22px;
+	font-weight: bolder;
+	min-height: 600px;
+}
+
+.container .row{
+	min-height: 300px;
+	padding: 30px 10px 30px 10px;
+}
+
+.container .row:first-child{
+	background: url("../img/background_new.png") repeat;
+	line-height: 600px;
+	padding: 0px;
+	text-align: center;
+}
+
+.container .row .topic-pic{
+	background: url("../img/title/line.png") repeat-x 0px 55px;
+	margin: 0px auto;
+	padding-bottom: 1px;
+	width: 50%;
+}
+
+.container .row p.topic{
+	font-size: 1.6em;
+	font-weight: bolder;
+	margin: 20px 0px 50px 0px;
+	text-align: center;
+	/*text-align: left;*/
+}
+
+.container .row.div-profile,.container .row.div-skill,.container .row.div-other{
+	background-color: 	#ECECFF;
+}
+
+.container .row.div-experience{
+	/*background-color: #FFFFBB;*/
+}
+
+.container .row+.small{
+	min-height: 0px;
+}
+
+.container .row .topic:before{
+	margin-right: 10px;
+}
+
+.container .row .profile:before{
+	content: url("../img/title/lion.png");
+}
+
+.container .row .profile-pic,.container .row .experience-pic{
+	text-align: center;
+}
+
+.container .row .profile-pic img{
+	background-color: #FFF0F5;
+	border-radius: 12px;
+	border: 3px #BD3E0D dashed;
+	padding: 2px;
+	width: 90%;
+}
+
+.container .row .profile-content{
+	padding-left: 50px;
+}
+
+.container .row .profile-content .line{
+	font-family: Helvetica,"微軟正黑體";
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 32px;
+}
+
+.container .row .profile-content .line:before{
+	content: url("../img/crown-2.png");
+	display: inline-block;
+	margin-right: 8px;
+	vertical-align: middle;
+}
+
+.container .row .experience-pic{
+	padding-right: 30px;
+}
+
+.container .row .experience:before{
+	content: url("../img/title/animal.png");
+}
+
+.container .row .experience-pic img{
+	width: 167px;
+}
+
+.container .row .experience-pic img:first-child{
+	margin-bottom: 8px;
+}
+
+.container .div-experience .company{
+	color: #DC5C29;
+	font-size: 1.6em;
+	font-weight: 600;
+}
+
+.container .div-experience .info{
+	font-size: 1.3em;
+}
+
+.container .row .product{
+	border-top: 3px dotted yellow;
+	padding-top: 30px;
+	padding-left: 8%;
+	margin-top: 20px;
+}
+
+.container .row .product a{
+	float: left;
+	margin-right: 6px;
+	margin-bottom: 12px;
+}
+
+.container .row .product a img{
+	border: 2px solid #BEBEBE;
+	padding: 5px;
+}
+
+.container .row .other:before{
+	content: url("../img/title/fashion.png");
+}
+
+.container .row .skill:before{
+	content: url("../img/title/other.png");
+}
+
+.container .div-skill .skill-content,.container .div-other .other-content{
+	color: #DC5C29;
+	font-size: 1.5em;
+	line-height: 2.2em;
+	text-align: center;
+}
+
+.container .row .introduce:before{
+	content: url("../img/title/food.png");
+}
+
+.container .row.div-introduce-cover{
+	background: url("../img/sky.jpg") center 70% fixed #FFFFFF;
+	text-align: center;
+	height: 670px;
+	padding: 0px;
+}
+
+.container .row.div-introduce-cover .introduce-title{
+	background-color: rgba(255,255,255,0.4);
+	color: #DC5C29;
+	font-size: 30px;
+	font-weight: bolder;
+	line-height: 670px;
+}
+
+.container .row.div-introduce .introduce-content{
+	color: #DC5C29;
+	font-size: 1.3em;
+}
+
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+@media screen and (max-width: 959px){
+	.nav-bar .nav-bar-header{
+		text-align: center;
+		padding-right: 20px;
+	}
+
+	.nav-bar .nav-bar-header .header{
+		clear: both;
+	}
+
+	.nav-bar .nav-bar-header .menu .bar{
+		display: block;
+		position: relative;
+		top: 10px;
+	}
+
+	.nav-bar .nav-bar-header .menu .bar i{
+		cursor: pointer;
+	}
+
+	.nav-bar .nav-bar-header .menu .bar-down{
+		display: none;
+		background-color: rgba(205,183,249,.7);
+		border-radius: 6px;
+		padding: 5px;
+		position: absolute;
+		right: 15px;
+		top: 45px;
+	}
+
+	.nav-bar .nav-bar-header .menu .bar-down .title{
+		text-align: center;
+	}
+
+	.nav-bar .nav-bar-header .menu .bar-down .title li.item{
+		clear: both;
+	}
+
+	.nav-bar .nav-bar-header .menu .bar-down .title .item a{
+		color: blue;
+		line-height: 20px;
+	}
+
+	.nav-bar .nav-bar-header .menu .bar-down .title .item a:hover{
+		text-shadow: 1px 1px #337ab7;
+	}
+
+	.container .row p.topic{
+		font-size: 1.3em;
+	}
+
+	.container .row .profile-pic{
+		margin-bottom: 26px;	
+	}
+
+	.container .row .profile-pic img{
+		width: 40%;
+	}
+
+	.container .row .profile-content{
+		margin-left: 20%;
+	}	
+
+	.container .row .profile-content .line{
+		display: block;
+	}
+
+	.container .row .experience-pic{
+		margin-bottom: 20px;
+	}
+
+	.container .row .experience-content{
+		text-align: center;
+	}
+
+	.container .experience-pic img:first-child{
+		margin-right: 5px;
+	}
+
+	.container .row .product{
+		border: none;
+		padding-top: 10px;
+	}
+
+	.container .row .product a{
+		clear: both;
+		margin-bottom: 12px;
+		text-align: center;
+		width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 474px){
+	.container .row .profile-content{
+		text-indent: -1.5em;
+	}
+}
